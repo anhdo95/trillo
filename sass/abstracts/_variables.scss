@@ -1,0 +1,41 @@
+// COLORS
+$color-primary: #eb2f64;
+$color-primary-light: #FF3366;
+$color-primary-dark: #BA265D;
+
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #f4f2f2;
+$color-grey-light-3: #f0eeee;
+$color-grey-light-4: #ccc;
+
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #999;
+
+$color-white: #fff;
+$color-black: #000;
+
+// FONT
+$font-size-default: 1.6rem;
+$font-size-xs: 1.2rem;
+$font-size-sm: 1.4rem;
+$font-size-md: 2rem;
+$font-size-lg: 3rem;
+$font-size-xl: 6rem;
+
+// GRID
+$grid-width: 114rem;
+$grid-width-sm: 60rem;
+$grid-gutter: 2rem;
+
+// BOX SHADOW
+$box-shadow-primary: 0 1rem 2rem rgba($color-black, .2);
+$box-shadow-secondary: 0 1.5rem 4rem rgba($color-black, .15);
+$box-shadow-tertiary: 0 .5rem 1rem rgba($color-black, .2);
+$box-shadow-darker: 0 1rem 2rem rgba($color-black, .5);
+$box-shadow-lighter: 0 .25rem .5rem rgba($color-black, .1);
+
+// BORDER
+$border-radius-default: 3px;
+
+// Z-INDEX
