@@ -26,13 +26,17 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
 
-  background-image: linear-gradient(to top right, $color-primary-light, $color-primary-dark);
+  background-image: 
+    linear-gradient(
+      to top right,
+      var(--color-primary-light),
+      var(--color-primary-dark));
   background-repeat: no-repeat;
 }
 
 ::selection {
-  color: $color-white;
-  background-color: $color-primary;
+  color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 ::-webkit-scrollbar {
@@ -40,15 +44,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: $color-grey-light-1;
-  border-radius: $border-radius-default;
+  background-color: var(--color-grey-light-1);
+  border-radius: var(--border-radius-default);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $color-primary-dark;
-  border-radius: $border-radius-default;
+  background-color: var(--color-primary-dark);
+  border-radius: var(--border-radius-default);
   
   &:hover {
-    background-color: $color-primary;
+    background-color: var(--color-primary);
   }
 }

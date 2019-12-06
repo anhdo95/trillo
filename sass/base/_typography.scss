@@ -2,12 +2,12 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: $color-grey-dark-1;
+  color: var(--color-grey-dark-1);
 }
 
 a {
-  font-size: $font-size-default;
-  color: $color-grey-dark-1;
+  font-size: var(--font-size-default);
+  color: var(--color-grey-dark-1);
   text-decoration: none;
 }
 
@@ -19,5 +19,5 @@ ul {
 
 .paragraph {
   margin-bottom: 3rem;
-  font-size: $font-size-default;
+  font-size: var(--font-size-default);
 }
