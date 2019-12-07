@@ -18,10 +18,7 @@ ul {
 }
 
 .paragraph {
+  margin-bottom: 2rem;
   font-size: var(--font-size-sm);
   color: var(--color-grey-dark-2);
-  
-  &:not(:last-of-type) {
-    margin-bottom: 2rem;
-  }
 }
