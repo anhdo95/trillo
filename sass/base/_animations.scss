@@ -1,1 +1,22 @@
 // Defines animations later
+@mixin animation-pulsate() {
+  animation: pulsate 1s linear infinite;
+  
+  @keyframes pulsate {
+    0% {
+      box-shadow: none;
+      transform: scale(1);
+    }
+  
+    50% {
+      box-shadow: var(--shadow-primary);
+      transform: scale(1.05);
+    }
+  
+    100% {
+      box-shadow: none;
+      transform: scale(1);
+    }
+  }
+}
+

@@ -1,0 +1,71 @@
+.overview {
+  @extend .flex-align-items-center;
+  
+  height: 7rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--border-section);
+
+  &__hotel-name {
+    @extend .text-uppercase;
+
+    margin: 0 3rem;
+    font-size: var(--font-size-md);
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--color-grey-dark-2)
+  }
+
+  &__hotel-stars {
+    display: flex;
+    margin-right: auto;
+  }
+
+  &__hotel-star-icon,
+  &__hotel-location-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__hotel-location {
+    @extend .flex-align-items-center;
+
+    padding: 0 2rem;
+  }
+
+  &__hotel-location-link {
+    margin-left: .5rem;
+    font-size: var(--font-size-xs);
+    color: var(--color-primary);
+    border-bottom: 1px solid currentColor;
+
+    &:hover {
+      color: var(--color-grey-dark-1);
+    }
+
+    &:focus {
+      @include animation-pulsate;
+    }
+  }
+
+  &__hotel-rating {
+    @extend .flex-center;
+
+    flex-direction: column;
+    align-self: stretch;
+    margin-bottom: -1px;
+    padding: 0 2rem;
+    color: var(--color-grey-light-1);
+    background-color: var(--color-primary);
+  }
+
+  &__hotel-rating-average {
+    font-size: var(--font-size-md);
+    font-weight: 300;
+  }
+
+  &__hotel-rating-count {
+    @extend .text-uppercase;
+  }
+}
+
