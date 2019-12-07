@@ -1,12 +1,31 @@
 .user-reviews {
   &__box {
+    position: relative;
     padding: 3rem;
+    overflow: hidden;
     background-color: var(--color-grey-light-1);
     box-shadow: var(--shadow-secondary);
 
     &:not(:last-child) {
       margin-bottom: 3rem;
     }
+
+    &::before {
+      position: absolute;
+      content: '\201C';
+      top: -3rem;
+      left: -1rem;
+
+      font-family: sans-serif;
+      font-size: 20rem;
+      line-height: 1;
+      color: var(--color-grey-light-3);
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 10;
   }
 
   &__assessment {
