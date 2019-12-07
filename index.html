@@ -14,16 +14,20 @@
 <body>
   <div class="container">
     <header class="header">
-      <figure class="header__logo-box">
-        <img class="header__logo" src="img/logo.png" alt="Trillo Logo">
-      </figure>
+      <a class="header__link" href="#">
+        <figure class="header__logo-box">
+          <img class="header__logo" src="img/logo.png" alt="Trillo Logo">
+        </figure>
+      </a>
       <form action="#" class="search-form">
-        <input type="text" class="search-form__input">
-        <button class="search-form__button">
-          <svg class="search-form__icon">
-            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-          </svg>
-        </button>
+        <div class="search-form__box">
+          <input type="text" class="search-form__input" placeholder="Search hotels">
+          <button class="search-form__button">
+            <svg class="search-form__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </div>
       </form>
       <div class="user-nav">
         <div class="user-nav__icon-box">
@@ -36,7 +40,7 @@
           <svg class="user-nav__icon">
             <use xlink:href="img/sprite.svg#icon-chat"></use>
           </svg>
-          <span class="user-nav__notification">1</span>
+          <span class="user-nav__notification">11</span>
         </div>
         <figure class="user-nav__user">
           <img src="img/me.jpg" alt="User photo" class="user-nav__user-photo">
