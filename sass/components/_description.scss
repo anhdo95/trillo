@@ -17,11 +17,12 @@
   }
 
   &__friend-box {
-    width: 4.5rem;
-    height: 4.5rem;
-    padding: .25rem;
-    margin-left: -2rem;
+    box-sizing: content-box;
+    width: 4rem;
+    height: 4rem;
+    margin-left: -1.5rem;
     background-color: var(--color-white);
+    border: var(--photo);
     border-radius: var(--border-circle);
   }
 
