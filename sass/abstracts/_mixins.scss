@@ -6,6 +6,14 @@
   }
 }
 
+@mixin transition(
+  $property: var(--transition-property), 
+  $duration: var(--transition-duration), 
+  $timing: var(--transition-timing),
+  $delay: var(--transition-delay)) {
+    transition: $property $duration $timing $delay;
+}
+
 // MEDIA QUERY MANAGER
 /*
 0 - 600px:      Phone

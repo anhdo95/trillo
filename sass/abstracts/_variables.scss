@@ -18,6 +18,7 @@
 
   // FONT
   --font-size-default: 1.6rem;
+  --font-size-xxs: 1rem;
   --font-size-xs: 1.2rem;
   --font-size-sm: 1.4rem;
   --font-size-md: 2rem;
@@ -37,7 +38,15 @@
   --shadow-lighter: 0 .25rem .5rem rgba(var(--color-black), .1);
 
   // BORDER
-  --border-radius-default: 3px;
+  --border-default: 3px;
+  --border-rounded: 100px;
+  --border-circle: 50%;
+
+  // TRANSITION
+  --transition-property: all;
+  --transition-duration: .3s;
+  --transition-timing: ease;
+  --transition-delay: 0s;
 
   // Z-INDEX
 }

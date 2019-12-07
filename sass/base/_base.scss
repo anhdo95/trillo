@@ -28,10 +28,17 @@ body {
 
   background-image: 
     linear-gradient(
-      to top right,
+      to right bottom,
       var(--color-primary-light),
       var(--color-primary-dark));
   background-repeat: no-repeat;
+}
+
+input,
+button {
+  &:focus {
+    outline: none;
+  }
 }
 
 ::selection {

@@ -3,6 +3,29 @@
   display: none;
 }
 
+// FLEX
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-align-items-center {
+  display: flex;
+  align-items: center;
+}
+
 // TRANSFORM
 .text-uppercase {
   text-transform: uppercase;
