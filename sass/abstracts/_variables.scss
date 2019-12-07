@@ -1,3 +1,5 @@
+$color-black: #000;
+
 :root {
   // COLORS
   --color-primary: #eb2f64;
@@ -15,6 +17,7 @@
 
   --color-white: #fff;
   --color-black: #000;
+  --color-black-hex: 0, 0, 0;
 
   // FONT
   --font-size-default: 1.6rem;
@@ -31,11 +34,9 @@
   --grid-gutter: 2rem;
 
   // BOX SHADOW
-  --shadow-primary: 0 3rem 6rem rgba(var(--color-black), .3);
-  --shadow-secondary: 0 1.5rem 4rem rgba(var(--color-black), .15);
-  --shadow-tertiary: 0 .5rem 1rem rgba(var(--color-black), .2);
-  --shadow-darker: 0 1rem 2rem rgba(var(--color-black), .5);
-  --shadow-lighter: 0 .25rem .5rem rgba(var(--color-black), .1);
+  --shadow-primary: 0 3rem 6rem rgba(var(--color-black-hex), .4);
+  --shadow-secondary: 0 1.5rem 4rem rgba(var(--color-black-hex), .2);
+  --shadow-tertiary: 0 .5rem 1rem rgba(var(--color-black-hex), .15);
 
   // BORDER
   --border-default: 3px;
@@ -45,7 +46,9 @@
   // TRANSITION
   --transition-property: all;
   --transition-duration: .3s;
+  --transition-duration-slow: .5s;
   --transition-timing: ease;
+  --transition-timing-fast: cubic-bezier(1, 0, 0, 1);
   --transition-delay: 0s;
 
   // Z-INDEX
