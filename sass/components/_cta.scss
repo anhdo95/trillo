@@ -55,20 +55,20 @@
       $timing: var(--transition-timing-fast));
   }
   
-  &__hovering-text {
+  &__invisible-text {
     transform: translateY(-100%);
   }
 
-  &__normal-text {
+  &__visible-text {
     @extend .abs-full;
     @extend .flex-center;
   }
 
-  &__button:hover &__hovering-text {
+  &__button:hover &__invisible-text {
     transform: translateY(0);
   }
 
-  &__button:hover &__normal-text {
+  &__button:hover &__visible-text {
     transform: translateY(100%);
   }
 }
