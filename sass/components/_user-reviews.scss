@@ -1,0 +1,69 @@
+.user-reviews {
+  &__box {
+    padding: 3rem;
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--shadow-secondary);
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__assessment {
+    @extend .flex-align-items-center;
+  }
+
+  &__photo-box {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-circle);
+  }
+
+  &__info {
+    @extend .flex-column;
+    
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+
+  &__name {
+    @extend .text-uppercase;
+
+    margin-bottom: .5rem;
+    font-weight: 600;
+  }
+
+  &__rating {
+    font-size: var(--font-size-lg);
+    font-weight: 300;
+    color: var(--color-primary);
+  }
+
+  &__button {
+    font-size: var(--font-size-sm);
+    color: var(--color-primary);
+    border-bottom: 1px solid currentColor;
+
+    &:hover {
+      color: var(--color-grey-dark-1);
+    }
+
+    &:focus {
+      @include animation-pulsate;
+    }
+  }
+
+  &__arrow-right {
+    @include transition($property: margin);
+  }
+
+  &__button:hover &__arrow-right {
+    margin-left: .5rem;
+  }
+}
