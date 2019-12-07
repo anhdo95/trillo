@@ -1,0 +1,45 @@
+.search-form {
+  flex: 0 1 40%;
+
+  &__box {
+    @extend .flex-center;
+
+    position: relative;
+    width: 100%;
+  }
+
+  &__input {
+    @include transition($property: width);
+
+    width: 90%;
+    height: 3.5rem;
+    padding-left: 2rem;
+    padding-right: 6rem;
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--color-grey-dark-3);
+    background-color: var(--color-grey-light-3);
+    border: none;
+    border-radius: var(--border-rounded);
+
+    &::-webkit-input-placeholder {
+      color: var(--color-grey-dark-3);
+    }
+
+    &:focus {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    margin-left: -4rem;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-grey-dark-3);
+  }
+}

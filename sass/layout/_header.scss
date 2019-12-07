@@ -1,3 +1,15 @@
 .header {
-  
+  @extend .flex-space-between-center;
+
+  height: 7rem;
+  font-size: var(--font-size-sm);
+  background-color: var(--color-white);
+
+  &__link {
+    margin-left: 2rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
 }

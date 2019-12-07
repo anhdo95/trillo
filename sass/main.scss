@@ -7,10 +7,12 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-// @import 'components/button';
+@import 'components/search-form';
+@import 'components/user-nav';
 
-@import 'layout/navigation';
 @import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/hotel-view';
 @import 'layout/footer';
 
 @import 'pages/home';

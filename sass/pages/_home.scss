@@ -9,18 +9,3 @@
 .content {
   display: flex;
 }
-
-.header {
-  height: 7rem;
-  background-color: var(--color-grey-light-2);
-}
-
-.sidebar {
-  flex: 0 0 15rem;
-  background-color: var(--color-grey-dark-1);
-}
-
-.hotel-view {
-  flex: 1;
-  background-color: var(--color-white);
-}
