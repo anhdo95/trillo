@@ -12,4 +12,8 @@
     flex-direction: column;
     padding: 3rem;
   }
+
+  @include respond(phone-small) {
+    padding: 1.5rem;
+  }
 }
