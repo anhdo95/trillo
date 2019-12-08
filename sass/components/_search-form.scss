@@ -1,6 +1,11 @@
 .search-form {
   flex: 0 1 40%;
 
+  @include respond(phone-small) {
+    flex: 0 0 70%;
+    order: 1;
+  }
+
   &__box {
     @extend .flex-center;
 

@@ -8,6 +8,10 @@
   &__item {
     flex: 0 0 50%;
     margin: .5rem 0;
+
+    @include respond(phone-small) {
+      flex: 0 0 100%;
+    }
     
     &::before {
       content: '';

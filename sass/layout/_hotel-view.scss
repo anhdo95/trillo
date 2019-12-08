@@ -7,4 +7,9 @@
   @extend .flex-space-between;
   padding: 4rem;
   color: var(--color-grey-dark-2);
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    padding: 3rem;
+  }
 }

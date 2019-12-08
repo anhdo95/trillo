@@ -1,9 +1,22 @@
 .side-nav {
+  
+  @include respond(phone) {
+    display: flex;
+  }
+
   &__item {
     position: relative;
 
+    @include respond(phone) {
+      flex-grow: 1;
+    }
+
     &:not(:last-child) {
       margin-bottom: .5rem;
+
+      @include respond(phone) {
+        margin-bottom: 0;
+      }
     }
 
     &::before { 
@@ -42,6 +55,11 @@
     padding: 1.5rem 3rem;
     font-size: var(--font-size-sm);
     color: var(--color-grey-light-1);
+
+    @include respond(phone) {
+      flex-direction: column;
+      padding: 1rem 1.5rem;
+    }
   }
 
   &__icon {
@@ -49,5 +67,10 @@
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor;
+
+    @include respond(phone) {
+      margin-right: 0;
+      margin-bottom: .5rem;
+    }
   }
 }

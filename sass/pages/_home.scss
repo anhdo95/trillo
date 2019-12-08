@@ -6,9 +6,17 @@
   margin: 5rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-primary);
+
+  @include respond(phone) {
+    margin: 0;
+  }
 }
 
 .content {
   display: flex;
   flex-grow: 1;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
 }

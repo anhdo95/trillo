@@ -6,8 +6,22 @@
   background-color: var(--color-white);
   border-bottom: var(--line);
 
+  @include respond(phone-small) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+
+    & > * {
+      margin: .5rem 0;
+    }
+  }
+
   &__link {
     margin-left: 2rem;
+
+    @include respond(phone-small) {
+      margin-left: 0;
+    }
   }
 
   &__logo {

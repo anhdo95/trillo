@@ -10,6 +10,10 @@
     font-size: var(--font-size-md);
     font-weight: 300;
     color: var(--color-grey-dark-2);
+
+    @include respond(phone) {
+      font-size: var(--font-size-sm);
+    }
   }
 
   &__button {
@@ -30,6 +34,12 @@
     
     border: none;
     border-radius: var(--border-rounded);
+
+    @include respond(phone) {
+      width: 16rem;
+      height: 4rem;
+      font-size: var(--font-size-sm);
+    }
 
     &:hover {
       cursor: pointer;

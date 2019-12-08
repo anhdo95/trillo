@@ -5,19 +5,38 @@
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
 
+  @include respond(phone-small) {
+    flex-direction: column;
+    height: auto;
+
+    & > * {
+      margin: .5rem 0;
+    }
+  }
+
   &__hotel-name {
     @extend .text-uppercase;
 
-    margin: 0 3rem;
+    padding: 0 3rem;
     font-size: var(--font-size-md);
     font-weight: 300;
     letter-spacing: 1px;
-    color: var(--color-grey-dark-2)
+    color: var(--color-grey-dark-2);
+
+    @include respond(phone) {
+      padding: 0 1rem;
+      font-size: var(--font-size-sm);
+      letter-spacing: initial;
+    }
   }
 
   &__hotel-stars {
     display: flex;
     margin-right: auto;
+
+    @include respond(phone-small) {
+      margin-right: initial;
+    }
   }
 
   &__hotel-star-icon,
